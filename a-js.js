@@ -41,24 +41,37 @@ function setType(params) {
     type = params;
 
 }
+var sflag=0;
+var eflag=0;
 function change(params) {
     var cur = params;
     if (type == 1) {
-        cur.style.background = "gray";
-        if (cur.style.background = "gray") { //第二次点击则还原
+        if (cur.style.background == "gray") { //第二次点击则还原
             cur.style.background = "black";
         }
+        else {
+            cur.style.background = "gray";
+        }
+
     }
     else if (type == 2) {  // 起点
-        cur.style.background = "green";
-        if (cur.style.background = "green") {
+        
+        if (cur.style.background == "green") {
             cur.style.background = "black";
+            sflag=0;
+        }
+        else if(sflag==0){
+            cur.style.background = "green";
+            sflag=1;
         }
     }
     else if (type == 3) { //终点
-        cur.style.background = "red";
-        if (cur.style.background = "red") {
+        if (cur.style.background == "red") {
             cur.style.background = "black";
+            eflag=0;
+        } else if(eflag==0){
+            cur.style.background = "red";
+            eflag=1;
         }
     }
 
