@@ -1,30 +1,27 @@
 <!doctype html>
 <html>
-    <head>   
+  <head>
     <meta charset="utf-8">
     <title>A*算法</title>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>-->
-    <link rel="stylesheet" href="a.css"/>
+    <link rel="stylesheet" href="a.css" />
     <script src="a-js.js"></script>
-    
   </head>
-    <body>
-  <div>
-    <div class="div1">
-        <span>网格：<input type="number" id="rnum" class="inputsty"/>&nbsp;行&nbsp;&nbsp;</span>
-        <span><input type="number" id="cnum" class="inputsty"/>&nbsp;列&nbsp;&nbsp; </span>
-        <span><button onclick="createtable()" class="btnsty">创建</button><br></span>
-    </div>
-    <div>
-        <span><br><button onclick="setType(1)" class="btnsty">设置障碍物</button></span>
-        <span><button onclick="setType(2)" class="btnsty">设置起点</button></span>
-        <span><button onclick="setType(3)" class="btnsty">设置终点</button></span>
-        <span><button onclick="a_calculate()" class="btnsty">确认</button></span>
-    </div>
-    
-    <div id="mytable"></div>
-  </div>
 
-    </body>
-   
+  <body>
+    <div>
+      <div class="op-div">
+        <span>网格：<input type="number" id="rnum" class="input-sty"/>&nbsp;行&nbsp;&nbsp;</span>
+        <span><input type="number" id="cnum" class="input-sty"/>&nbsp;列&nbsp;&nbsp; </span>
+        <span><button onclick="createtable()" class="btn-sty">创建</button><br></span>
+      </div>
+      <div>
+        <span><br><button onclick="setType(1)" class="btn-sty">设置障碍物</button></span>
+        <span><button onclick="setType(2)" class="btn-sty">设置起点</button></span>
+        <span><button onclick="setType(3)" class="btn-sty">设置终点</button></span>
+        <span><button onclick="a_calculate()" class="btn-sty">确认</button></span>
+      </div>
+      <div id="mytable"></div>
+    </div>
+
+  </body>
 </html>
