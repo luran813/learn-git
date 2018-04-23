@@ -1,0 +1,77 @@
+
+.op-div{
+  width: 100%;
+  height: 100%;
+  min-width: 550px;
+  /*background-color: black;*/
+}
+#griddiv{
+  padding-top: 60px;
+  margin: auto;
+}
+
+#mytable tr td{
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+.input-sty{
+  font-size: 16px;
+  width: 80px;
+  height: 30px;
+}
+.btn-sty{
+  font-size: 16px;
+  width: 140px;
+  margin-left: 10px;
+  height: 30px;
+}
+.barrier{
+  background-color: gray;
+}
+.start{
+  background-color: green;
+}
+.stop{
+  background-color: red;
+}
+.route{
+  background-color: yellow;
+}
+#way{
+  font-size: 16px;
+}
+.div-float{
+  float: left;
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+.clear-float{
+  clear: both;
+  display: flex;/*inline-flex*/
+}
+.div-absoute{
+  position: absolute;
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+}
+.nodrag-div{
+  background: lightgray;
+  width: 200px;
+  height: 8px;
+  position: absolute;
+  left: 50px;
+  top:120px;
+}
+.drag-div{
+  background: orange;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  left: 120px;
+  top:113px;
+  z-index: 5;
+}

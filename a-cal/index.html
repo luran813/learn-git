@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A*算法</title>
+    <link rel="stylesheet" href="./resources/css/a.css" />
+  </head>
+
+  <body>
+    <div>
+      <div class="op-div">
+        <span>网格：<input type="text" id="rnum" class="input-sty"/>&nbsp;行&nbsp;&nbsp;</span>
+        <span><input type="text" id="cnum" class="input-sty"/>&nbsp;列&nbsp;&nbsp; </span>
+        <span>
+          <select id="way">
+            <option value="way1" selected>table生成方式</option>
+            <option value="way2">浮动方式</option>
+            <option value="way3">定位方式</option>
+          </select></span>
+        <span><button class="btn-sty" id="createTab">创建</button><br></span>
+      </div>
+      <div class="op-div">
+        <span><br><button class="btn-sty" id="setbarrier">设置障碍物</button></span>
+        <span><button class="btn-sty" id="setstart">设置可通过的点</button></span>
+        <!--<span><button class="btn-sty" id="setstop">设置终点</button></span>-->
+        <span><button class="btn-sty" id="ok">确认</button></span>
+      </div>
+      <div class="nodrag-div"></div>
+      <div class="drag-div" id="scalediv"></div>
+      <div id="griddiv"></div>
+    </div>
+
+    <script src="./libs/jquery.js"></script>
+    <script src="./src/a.js"></script>
+  </body>
+</html>
