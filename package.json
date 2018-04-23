@@ -1,0 +1,19 @@
+{
+  "name": "learngit",
+  "version": "1.0.0",
+  "description": "this is a practice 验证多分支修改同一个文件",
+  "main": "a-jquery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luran813/learn-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luran813/learn-git/issues"
+  },
+  "homepage": "https://github.com/luran813/learn-git#readme"
+}
